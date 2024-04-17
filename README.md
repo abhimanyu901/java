@@ -1,2 +1,2 @@
 # java
-IntroJava
+Introduction-to-object-oriented-progrqmming
