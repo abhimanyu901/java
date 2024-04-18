@@ -1,50 +1,49 @@
-package com.in28minutes.oops;
+package com.in28minutes.primitive.datatypes;
 
 public class BiNumber {
+	private int number1;
+	private int number2;
 
-	private int a;
-	private int b;
-	private int c;
-
-	BiNumber(int a, int b){
-		this.a = a;
-		this.b = b;
-
+	public int getNumber1() {
+		return number1;
 	}
 
-	/*
-	 * public int getC() { return c; }
-	 *
-	 * public void setC(int c) { this.c = c; }
-	 */
+	public void setNumber1(int number1) {
+		this.number1 = number1;
+	}
 
-	/*
-	 * public int getA() { return a; }
-	 *
-	 * public void setA(int a) { this.a = a; }
-	 *
-	 * public int getB() { return b; }
-	 *
-	 * public void setB(int b) { this.b = b; }
-	 */
+	public int getNumber2() {
+		return number2;
+	}
+
+	public void setNumber2(int number2) {
+		this.number2 = number2;
+	}
+
+	public BiNumber(int number1, int number2) {
+		// TODO Auto-generated constructor stub
+		this.number1 = number1;// from the argument we are refering value to the private variable
+		this.number2 = number2;
+	}
 
 	public int add() {
-		this.c = a + b;
-		return c;
+		return number1 + number2;
 	}
 
 	public int multiply() {
-		this.c = a * b;
-		return c;
+		return number1 * number2;
 	}
 
-	public int[] doubled() {
-		int c[] = { 2 * a, 2 * b };
-		// private int number1 = c[0];
-		// private int number2 = c[1];
+	public void doubleValue() {
+		/*
+		 * this.number1 = 2*number1; this.number1 = 2*number2;
+		 */
+		this.number1 *= 2;
+		this.number2 *= 2;
+	}
 
-		return c;
-
+	public int addition() {
+		return number1 + number2;
 	}
 
 }
